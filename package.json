@@ -1,0 +1,43 @@
+{
+    "name": "crystallography-online.com",
+    "version": "1.0.0",
+    "description": "Crystallography online redirects",
+    "author": {
+        "name": "Volodymyr Vreshch",
+        "email": "vreshch@gmail.com",
+        "url": "http://vreshch.com"
+    },
+    "license": "MIT",
+    "keywords": [],
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "devEngines": {
+        "node": ">=8.0.0"
+    },
+    "homepage": "http://crystallography.io/",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chemistry/crystallography-redirects.git"
+    },
+    "scripts": {
+        "lint": "tslint -c tslint.json -p tsconfig.json 'src/**/*.tsx'",
+        "lint:fix": "tslint -c tslint.json -p tsconfig.json 'src/**/*.tsx' --fix",
+        "start": "node dist/index.js",
+        "build": "tsc",
+        "nodemon": "nodemon -e ts -w ./src -x ts-node src/index.ts"
+    },
+    "dependencies": {
+        "express": "4.17.1",
+        "morgan": "1.10.0"
+    },
+    "devDependencies": {
+        "@types/node": "12.11.1",
+        "@types/express": "4.17.9",
+        "@types/morgan": "1.9.2",
+        "nodemon": "1.19.4",
+        "ts-node": "8.4.1",
+        "tslint": "5.20.0",
+        "typescript": "3.6.4"
+    }
+}
